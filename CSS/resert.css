@@ -1,0 +1,10 @@
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* o resert css serve para limpar a formatação que os 
+browsers realizam de maneira padrão */

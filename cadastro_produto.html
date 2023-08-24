@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        .formulario {
+            font-size: 1.3rem;
+            /* define o tamanho dos botões */
+        }
+
+        .gestoraNav {
+            background-color: #2e9737;
+        }
+
+        .gestoraBody {
+            background-image: linear-gradient(#2e9737, transparent);
+        }
+
+        .form {
+            font-size: 1.4rem;
+            margin-left: 25%;
+            font-weight: bold;
+        }
+
+        .form label {
+            float: left;
+            width: 150px;
+            /* Define a largura do rótulo */
+            text-align: right;
+            /* Alinha o texto do rótulo à direita */
+            margin-right: 15px;
+            /* Adiciona um espaço entre o rótulo e o input */
+        }
+
+        .form input[type="text"] {
+            width: 300px;
+            /* Define a largura do input de texto */
+        }
+
+        .botoes ul li {
+            margin-left: 8rem;
+        }
+
+        h3 {
+            margin-left: 15%;
+        }
+
+        .header_nav a {
+            padding: .70rem 1.15rem;
+            border: solid 1px;
+            text-decoration: none;
+            color: #e5e5e5;
+        }
+
+        .header_nav ul {
+            display: flex;
+            gap: .6rem;
+            list-style-type: none;
+        }
+
+        .header_nav a:hover {
+            background-color: #213025d7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapperContainer wrapperContainer-dark gestoraNav">
+        <header class="header container">
+            <img src="imagens/LogoSite.png" alt="Aprenser" class="img_logo">
+
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="home_gestor.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-hero formularioContainer gestoraBody">
+
+        <section class="formulario container">
+            <h2 class="section_title"> Cadastro de Produtos </h2>
+
+            <div class="informacoes">
+                <form name="cadastro" method="post" action="php/cadastro_produto.php">
+                    <h3>Dados do produto:</h3>
+                    <!-- <article style="text-align: left; margin-left: 25%;"> -->
+                    <div class="form">
+                        <label> Nome do Produto: </label><input type="text" name="produto" id="produto"> <br> <br> <br>
+                        <label> Unidade de medida: </label><select name="unidade">
+                            <option>Quilo(kg)</option>
+                            <option>Unidade</option>
+                        </select> <br> <br> <br> <!--Ao selecionar a opção apareceria uma aba para informar-->
+                        <label> Valor Unidade: </label><input type="text" name="valor"> <br> <br> <br>
+                        <label> Quantidade: </label><input type="text" name="quantidade"> <br> <br> <br>
+                        <label> Código de Barras: </label><input type="text" name="codigo"> <br> <br> <br>
+                        <label> Validade do Produto: </label><input type="text" name="validade"> <br> <br> <br>
+                        <label> Lote: </label><input type="text" name="lote"> <br> <br> <br>
+                        <label> Fornecedor: </label><input type="text" name="fornecedor"> <br> <br>
+                        <!-- </article> -->
+                    </div>
+
+
+                    <div class="botoes">
+                        <ul>
+                            <li><input type="reset" value="Limpar"></li>
+                            <li><input type="submit" value="Enviar"></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

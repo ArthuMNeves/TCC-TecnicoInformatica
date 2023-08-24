@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+
+    <title>Site (Projeto)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        .gestoraNav {
+            background-color: #2e9737;
+        }
+
+        .gestoraHero {
+            background-image: linear-gradient(#2e9737, transparent);
+        }
+
+        .wrapperContainer-dark3 {
+            background-image: linear-gradient(transparent, #2e9737);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapperContainer wrapperContainer-dark wrapperContainer-fixed gestoraNav">
+        <header class="header container">
+          <a href="#top"> <img src="imagens/LogoSite.png" alt="Aprenser" class="img_logo"> </a>
+
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#loja">Quem somos</a></li>
+                    <li><a href="#local">Localização</a></li>
+                    <li><a href="login_gestor.html">Entrar como gestor</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-hero gestoraHero">
+        <section class="container heroBanner">
+            <div class="header_content">
+                <h1 class="hero_title">Nathuralleh é o modo saudável de <span class="upper">ser</span></h1> 
+                <a href="#produtos" class="btn">Saiba mais</a>
+            </div>
+            <img src="imagens/hiCoracao.png" alt="Mulher segurando flores" class="img_heroContainer">
+        </section>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="produtos">
+        <section  class="cursos container">
+            <h2 class="section_title">Principais Produtos</h2>
+
+            <div class="cursosContainer">
+
+                <article class="curso_card">
+                    <img src="imagens/graneis.png" alt="Curso design" class="img_cursoContainer">
+                    <div class="cursos_card_content">
+                        <h3>Granéis</h3>
+                        <p>O alimento à granel é mais fresco, o que além de deixar a comida mais saborosa é bem mais saudável.</p>
+                    </div>
+                </article>
+
+                <article class="curso_card">
+                    <img src="imagens/sanduiche.jpeg" alt="Curso Front-end" class="img_cursoContainer">
+                    <div class="cursos_card_content">
+                        <h3>Sanduíche Natural</h3>
+                        <p>Se você está em alguma dieta, saiba que o sanduíche natural pode entrar no seu cardápio 
+                            sem sair da dieta para atingir os seus objetivos.</p>
+                    </div>
+                </article>
+
+                <article class="curso_card">
+                    <img src="imagens/cracker.png" alt="Curso Back-end" class="img_cursoContainer">
+                    <div class="cursos_card_content">
+                        <h3>Chocolate Monster Rock</h3>
+                        <p>Esqueça aqueles doces fit sem graça, agora você tem a escolha certa 
+                            para te alegrar no dia a dia e manter sua rotina ainda mais saudável.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <a href="" class="btn section_btn">Ver mais produtos</a>
+            
+        </section>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-dark2 wrapperContainer-padded" id="loja">
+        <section class="containerL Escola" >
+            <img src="imagens/Loja.png" >
+                <div class="escola_content">
+                    <h2 class="escola_title">Nossa Loja</h2>
+                    <p>Conheça a mais nova loja de Produtos Naturais e Granéis pertinho de você! Nosso objetivo é 
+                        de, não somente trazer o incentivo a ter uma vida melhor e mais saudável que você merece, mas
+                        também direcioná-lo para esse caminho através de nossos produtos que além de serem saudáveis
+                        e fornecerem os recursos necessários para seu corpo, eles são extremamente deliciosos. Visite-nos
+                        na Academia Corpo e Forma, onde você pode adentrar no mundo fitness. Ser saudável é o melhor estilo 
+                        de vida!
+                    </p>
+                </div>
+        </section>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="local">
+        <section class="container" >
+            <h2 class="section_title">Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.495703313176!2d-51.32087899999998!3d-30.10862599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197f89604d2c69%3A0xe3e5bb52a8c7fd99!2sCorpo%20e%20Forma%20Academia!5e0!3m2!1spt-BR!2sbr!4v1683463788272!5m2!1spt-BR!2sbr" 
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address class="contatos_address">R. Gaspar Martins, 322 - Centro <br>
+                Tel.: +55 51 99119-3682 <br>
+                E-mail: nathurallehstore@gmail.com</address>
+        </section>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-dark3">
+        <footer class="footer">Desenvolvido por Arthur M Neves</footer>
+    </div>
+</body>
+</html>

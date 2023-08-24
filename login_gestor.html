@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        /* .loginContainer {
+            background: url("imagens/bg.jpeg") no-repeat center center;
+            background-size: cover;
+            height: 85.5vh;
+        }  */
+
+        .loginContainer {
+            background-image: linear-gradient(#2e9737, transparent);
+            padding-top: 5rem;
+        }
+
+        .wrapperContainer-dark {
+            background-color: #2e9737;
+        }
+
+        /* h1 {
+            color: #3f3d3d;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapperContainer wrapperContainer-dark wrapperContainer-fixed">
+        <header class="header2">
+            <center>
+                <a href="index.html"> <img src="imagens/LogoSite.png" alt="Aprenser" class="img_logo"> </a>
+            </center>
+        </header>
+    </div>
+    
+        <div class="loginContainer wrapperContainer">
+        <section class="container">
+            <h1> Nathuralleh in Store </h1> <br> <br>
+            <form class="formularioLogin">
+            <h3> Login </h3>
+            <div class="boxesLogin">
+                <input type="text" placeholder="Usuário" class="inputLogin" id="login"> <!-- gestor possui um cadastro para acessar o site -->
+                <input type="password" placeholder="Senha" class="inputLogin" id="senha">
+            </div>
+            <input type="submit" value="Entrar" onclick="logar(); return false" class="loginEnviar">
+            <br> <br>
+            </form>
+        </section>
+        </div>
+
+        <script>
+
+            function logar(){
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+
+                if(login == "admin" && senha == "admin"){
+                    
+                    location.href = "home_gestor.html";
+                }else{
+                    alert('Usuário ou senha incorretos');
+                }
+            }
+
+        </script>
+
+</body>
+</html>

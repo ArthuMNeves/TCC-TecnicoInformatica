@@ -1,0 +1,328 @@
+:root {
+--primary-color: #e5e5e5;           /*rgb(196, 189, 189);       /*aplicou a cor em uma variável*/
+}
+
+html {       /*formatando o hmtl*/
+    /*font-size: 62.5%;   /*diminui o tamanho da fonte para se basear em 10px (e ñ mais em 16) para facilitar as contas
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; */
+    font: 400 62.5% 'Inter', sans-serif;
+}
+/*body{
+    font-family: 'Inter', sans-serif;
+}*/
+
+p, a {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 4.0rem; /*= 48px*/
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+nav a {
+    color: inherit;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.btn {      /*personalizando o botão link! ("saiba mais)"*/
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.3rem 4.3rem;
+    display: inline-block;
+    color: inherit;
+}
+
+.img_logo {
+    width: 90px;
+    height: 90px;
+}
+
+.img_heroContainer {    /*_________*/
+    width: 700px;
+    height: 500px;
+}
+
+.img_cursoContainer {   /*____2*_____*/
+    width: 312px;
+    height: 150px;
+}
+
+.wrapperContainer {     /*técnica para colocar a margem do h2 sem empurrar o conteúdo*/
+    padding-top: 0.2rem;   
+}
+
+.formContainer {
+    padding-top: 0.3px;
+}
+
+.wrapperContainer-dark {
+    background-color: #052b08;          /*background-image: linear-gradient(#2a1f1a, transparent);     /*#052b08*/
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #644100;
+    color: #fafafa;
+}
+
+.wrapperContainer-dark3 {
+    background-image: linear-gradient(transparent, #2e9737);
+}
+
+.wrapperContainer-fixed {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapperContainer-padded {
+    padding-top: 7rem;
+}
+
+.container {
+    max-width: 102.4rem; /*________*/
+    margin: auto;
+}
+
+.containerL {       /*______*/
+    max-width: 102.4rem;
+    margin-left: 5rem;
+    padding-bottom: 4.5rem;
+}
+
+.section_title{
+    padding: 5rem 0;    /*pra cima e pra baixo & pra direita e pra esquerda*/
+    text-align: center;
+    margin: 0;
+}
+
+.section_btn {
+    margin: 5rem 0;   
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 0.5rem 0;
+}
+
+.header2 {
+    align-items: center;
+    color: var(--primary-color);
+     
+}
+
+.header_nav a {
+    padding: .70em 1.15rem;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header_nav ul{
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+}
+
+.header_nav a:hover {
+    background-color: #213025d7;
+}
+
+.wrapperContainer-hero {
+    background-image: linear-gradient(#052b08, transparent);  /*sempre usa background-image para aplicar gradiente*/
+    padding-top: 20px;
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero_title {
+    margin-bottom: 3rem;
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+
+.curso_card {
+    /*border: 1px solid #775757;
+    border-radius: 20px;
+    overflow: hidden;
+    /*flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 0;*/
+
+    flex: 1;
+}
+
+.curso_card img {   /*____2*_____*/
+    display: block;
+    width: 100%;
+}
+
+.curso_card p{
+    font-size: 1.3;
+    line-height: 1.5;
+}
+
+.cursos_card_content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+/**/ .funcoes {
+    text-align: center;
+}
+
+.funcoesContainer {
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+}
+
+.funcao_gestor {
+    flex: 1;
+}
+
+.funcao_gestor img {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.funcao_content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+.Escola {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 1rem;  */
+    padding-top: 0;
+}
+
+.escola_content {
+    margin-top: 0.5rem;
+    /* width: 90rem; */
+}
+
+.escola_content h2{
+    text-align: center;
+}
+
+.escola_title {
+    font-size: 3.0rem;
+}
+
+.Escola p{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.Escola img{
+    width: 600px;
+    height: auto;
+    margin-right: 4.5rem;
+    margin-top: 4.5rem;
+}
+
+.contatos_address {
+    text-align: right;
+    font: 400 1.5rem "Inter", sans-serif;
+    padding: 2rem 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4.6rem;
+}
+
+.formularioLogin {
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.inputLogin {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+
+.loginEnviar {
+    display: block;
+    margin: 12px auto;
+    width: 200px;
+    height: 25px;
+}
+
+.botoes {
+    margin-left: 10rem;
+}
+
+.botoes ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 9rem;
+}
+
+.botoes li input{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+    border-style: solid;
+    width: 150px;
+}
+
+.botoes li input:hover {
+    background-color: #644100; 
+    color: rgb(255, 255, 255);
+}
+
+.labelCadastro {
+    width: 100px;
+    display: inline-block;
+}
